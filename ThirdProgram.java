@@ -7,7 +7,8 @@ public class ThirdProgram {
         System.out.println("What is your firstName");
         String firstName = sc.next();
         System.out.println("What is your age");
-        int age = sc.nextInt();
+        String ageInput = sc.next();
+        int age = Integer.parseInt(ageInput);
 
         // String name = sc.nextLine();
 
