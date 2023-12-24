@@ -7,6 +7,8 @@ import com.college.teacher.teacherdetails.TeacherDetails;
 
 public class MyMain {
 
+    public static final char[] b = null;
+
     public static void main(String[] args) {
         System.out.println("I am Main");
 
@@ -22,4 +24,6 @@ public class MyMain {
         TeacherDetails td = new TeacherDetails();
         td.print();
     }
+
+    public static char[] a;
 }
