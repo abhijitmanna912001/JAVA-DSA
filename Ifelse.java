@@ -1,8 +1,14 @@
 public class Ifelse {
     public static void main(String[] args) {
-        int marks = 89;
+        int marks = 20;
 
-        System.out.println("You are topper as you have secured " + marks);
-        System.out.println("Your marks is: " + marks);
+        if (marks >= 35) {
+            System.out.println("You marks is: " + marks + ", passed");
+        }
+
+        else {
+            System.out.println("you have scored only " + marks + ", improvement required");
+        }
+
     }
 }
