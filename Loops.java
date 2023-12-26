@@ -4,7 +4,7 @@ public class Loops {
 
             for (int times = 1; times <= 10; times++) {
                 if (times == 5)
-                    break;
+                    continue;
                 System.out.println(num + "*" + times + ":\t" + num * times);
             }
         }
