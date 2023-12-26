@@ -10,9 +10,9 @@ public class Loops {
         // }
 
         int number = 27;
-        while (number != 0) {
+        do {
             System.out.println(number);
             number = number / 2;
-        }
+        } while (number != 0);
     }
 }
