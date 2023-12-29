@@ -1,3 +1,6 @@
+// https://practice.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1
+// I solved using this logic
+
 public class GCD {
     public static void main(String[] args) {
         gcd(20, 40);

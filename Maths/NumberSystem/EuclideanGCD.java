@@ -1,3 +1,6 @@
+// https://practice.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1
+// I solved using these 2 logic also
+
 public class EuclideanGCD {
     public static void main(String[] args) {
         euclidianGCD(24, 36);
