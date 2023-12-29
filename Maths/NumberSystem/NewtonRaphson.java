@@ -1,3 +1,6 @@
+// https://practice.geeksforgeeks.org/problems/square-root/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
+// I solved this using this logic.
+
 public class NewtonRaphson {
     public static void main(String[] args) {
         double result = squareRoot(400);
