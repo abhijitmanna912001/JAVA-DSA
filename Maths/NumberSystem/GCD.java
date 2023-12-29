@@ -1,6 +1,6 @@
 public class GCD {
     public static void main(String[] args) {
-        gcd(24, 36);
+        gcd(20, 40);
     }
 
     public static void gcd(int num1, int num2) {
