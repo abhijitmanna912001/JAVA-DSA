@@ -5,7 +5,7 @@
 
 public class TrailingZeros {
     public static void main(String[] args) {
-        trailingzerosofFactorial(10);
+        trailingzerosofFactorial(20);
     }
 
     static void trailingzerosofFactorial(int num) {
