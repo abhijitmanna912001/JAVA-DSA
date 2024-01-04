@@ -1,7 +1,10 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Introduction {
     public static void main(String[] args) {
+
+        ArrayList<Integer> dynamic = new ArrayList<>();
 
         int rollNo[] = new int[5];
         // int age[];
