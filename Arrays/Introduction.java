@@ -28,16 +28,20 @@ public class Introduction {
         // update(rollNo, 1, 6);
         // printArray(rollNo);
 
-        int my2dArray[][] = new int[3][2];
+        int my2dArray[][] = new int[3][];
+        int customeSize = 4;
 
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < my2dArray.length; i++) {
+            my2dArray[i] = new int[customeSize];
+
             for (int j = 0; j < my2dArray[i].length; j++) {
                 System.out.println("Enter " + j + " element: ");
                 int element = sc.nextInt();
                 my2dArray[i][j] = element;
             }
+            customeSize--;
         }
 
         print2DArray(my2dArray);
