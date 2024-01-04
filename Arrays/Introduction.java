@@ -6,25 +6,39 @@ public class Introduction {
 
         ArrayList<Integer> dynamic = new ArrayList<>();
 
-        int rollNo[] = new int[5];
-        // int age[];
-        // age = new int[7];
-        int dummy[] = { 2, 6, 7, 9, 2, 13, 2 };
-        rollNo[0] = 54;
+        // int rollNo[] = new int[5];
+        // // int age[];
+        // // age = new int[7];
+        // int dummy[] = { 2, 6, 7, 9, 2, 13, 2 };
+        // rollNo[0] = 54;
 
-        try (Scanner sc = new Scanner(System.in)) {
-            for (int i = 0; i < 3; i++) {
-                System.out.println("Enter " + i + " element: ");
+        // try (Scanner sc = new Scanner(System.in)) {
+        // for (int i = 0; i < 3; i++) {
+        // System.out.println("Enter " + i + " element: ");
+        // int element = sc.nextInt();
+        // rollNo[i] = element;
+        // }
+        // }
+
+        // // printArray(rollNo);
+        // // insert(rollNo, 1, 22);
+        // printArray(rollNo);
+        // delete(rollNo, 1);
+        // printArray(rollNo);
+
+        int my2dArray[][] = new int[3][2];
+
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < my2dArray.length; i++) {
+            for (int j = 0; j < my2dArray[i].length; j++) {
+                System.out.println("Enter " + j + " element: ");
                 int element = sc.nextInt();
-                rollNo[i] = element;
+                my2dArray[i][j] = element;
             }
         }
 
-        // printArray(rollNo);
-        // insert(rollNo, 1, 22);
-        printArray(rollNo);
-        delete(rollNo, 1);
-        printArray(rollNo);
+        print2DArray(my2dArray);
     }
 
     public static void printArray(int arr[]) {
@@ -55,5 +69,13 @@ public class Introduction {
             arr[i] = arr[i + 1];
         }
         arr[arr.length - 1] = 0;
+    }
+
+    public static void print2DArray(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("For " + i + " index");
+            printArray(arr[i]);
+        }
+        System.out.println();
     }
 }
