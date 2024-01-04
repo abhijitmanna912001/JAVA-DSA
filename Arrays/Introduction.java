@@ -39,6 +39,8 @@ public class Introduction {
         }
 
         print2DArray(my2dArray);
+        insert2DArray(my2dArray, 0, 0, 5);
+        print2DArray(my2dArray);
     }
 
     public static void printArray(int arr[]) {
@@ -76,6 +78,11 @@ public class Introduction {
             System.out.println("For " + i + " index");
             printArray(arr[i]);
         }
+        System.out.println();
+    }
+
+    public static void insert2DArray(int arr[][], int pos1, int pos2, int element) {
+        insert(arr[pos1], pos2, element);
         System.out.println();
     }
 }
