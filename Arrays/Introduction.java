@@ -2,25 +2,24 @@ import java.util.Scanner;
 
 public class Introduction {
     public static void main(String[] args) {
+
+        int rollNo[] = new int[5];
         // int age[];
         // age = new int[7];
-
-        // int rollNo[] = new int[5];
-        // rollNo[0] = 54;
-        // try (Scanner sc = new Scanner(System.in)) {
-        // for (int i = 0; i < rollNo.length; i++) {
-        // System.out.println("Enter " + i + " element: ");
-        // int element = sc.nextInt();
-        // rollNo[i] = element;
-        // // System.out.println(rollNo[i] + " ");
-        // }
-        // }
-
-        // printArray(rollNo);
-
         int dummy[] = { 2, 6, 7, 9, 2, 13, 2 };
-        insert(dummy, 4, 6);
-        printArray(dummy);
+        rollNo[0] = 54;
+
+        try (Scanner sc = new Scanner(System.in)) {
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Enter " + i + " element: ");
+                int element = sc.nextInt();
+                rollNo[i] = element;
+            }
+        }
+
+        printArray(rollNo);
+        insert(rollNo, 1, 22);
+        printArray(rollNo);
     }
 
     public static void insert(int arr[], int pos, int element) {
@@ -30,7 +29,7 @@ public class Introduction {
             return;
         }
 
-        for (int i = size - 1; i >= pos; i--) {
+        for (int i = size - 2; i >= pos; i--) {
             arr[i + 1] = arr[i];
         }
         arr[pos] = element;
