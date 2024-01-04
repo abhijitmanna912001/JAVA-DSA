@@ -17,9 +17,21 @@ public class Introduction {
             }
         }
 
+        // printArray(rollNo);
+        // insert(rollNo, 1, 22);
         printArray(rollNo);
-        insert(rollNo, 1, 22);
+        delete(rollNo, 1);
         printArray(rollNo);
+    }
+
+    public static void printArray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i != arr.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 
     public static void insert(int arr[], int pos, int element) {
@@ -35,13 +47,10 @@ public class Introduction {
         arr[pos] = element;
     }
 
-    public static void printArray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i != arr.length - 1) {
-                System.out.print(", ");
-            }
+    public static void delete(int arr[], int pos) {
+        for (int i = 0; i <= arr.length - 2; i++) {
+            arr[i] = arr[i + 1];
         }
-        System.out.println();
+        arr[arr.length - 1] = 0;
     }
 }
