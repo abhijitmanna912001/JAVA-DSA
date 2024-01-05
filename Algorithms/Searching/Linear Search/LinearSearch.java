@@ -5,7 +5,7 @@
 
 public class LinearSearch {
     public static void main(String[] args) {
-        int arr[] = { 3, 1, 3, 4, 5, 3 };
+        // int arr[] = { 3, 1, 3, 4, 5, 3 };
         // linearSearch(arr, 3, false);
         // linearSearch(arr, 3, true);
         // linearSearchMultiple(arr, 3);
@@ -15,8 +15,9 @@ public class LinearSearch {
                 { 8, 1, 2, 2, 3 },
                 { 5, 5, 5, 8, 4 }
         };
-        linearSearch2DArray(arr2d, 4, false);
-        linearSearch2DArray(arr2d, 4, true);
+        // linearSearch2DArray(arr2d, 4, false);
+        // linearSearch2DArray(arr2d, 4, true);
+        linearSearchMultiple2DArray(arr2d, 5);
     }
 
     public static void linearSearch(int arr[], int target, boolean findLast) {
@@ -77,6 +78,38 @@ public class LinearSearch {
             System.out.println("Element is not present in array");
         } else {
             System.out.println("Found element at pos: " + outerIndex + "," + innerIndex);
+        }
+    }
+
+    public static void linearSearchMultiple2DArray(int arr[][], int target) {
+        // int size = arr.length*arr[0].length;
+        int size = 0;
+        for (int i = 0; i < arr.length; i++) {
+            size = size + arr[i].length;
+        }
+        int ans[][] = new int[size][2];
+        int k = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            boolean found = false;
+            for (int j = 0; j < arr[i].length; j++) {
+                if (target == arr[i][j]) {
+                    ans[k][0] = i;
+                    ans[k][1] = j;
+                    k++;
+                }
+            }
+            if (found == true) {
+                break;
+            }
+        }
+
+        if (k == 0) {
+            System.out.println("Element is not present in the array");
+        } else {
+            for (int i = 0; i < k; i++) {
+                System.out.println("Found element at pos: " + ans[i][0] + "," + ans[i][1]);
+            }
         }
     }
 }
