@@ -16,7 +16,6 @@ public class LinearSearch {
                 { 5, 5, 5, 8, 4 }
         };
         linearSearch2DArray(arr2d, 4, false);
-
     }
 
     public static void linearSearch(int arr[], int target, boolean findLast) {
@@ -58,14 +57,19 @@ public class LinearSearch {
         int outerIndex = -1;
         int innerIndex = -1;
         for (int i = 0; i < arr.length; i++) {
+            boolean found = false;
             for (int j = 0; j < arr[i].length; j++) {
                 if (target == arr[i][j]) {
                     outerIndex = i;
                     innerIndex = j;
                     if (findLast == false) {
+                        found = true;
                         break;
                     }
                 }
+            }
+            if (found == true) {
+                break;
             }
         }
         if (outerIndex == -1) {
