@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/problems/binary-search-1587115620/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
-// Solved this question using below logic
+// https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x2041/1
+// https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
+// Solved these questions using below logic
 
 public class BinarySearch {
     public static void main(String[] args) {
