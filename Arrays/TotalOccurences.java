@@ -33,10 +33,5 @@ public class TotalOccurences {
             }
         }
         return ans;
-        // if (ans == -1) {
-        // System.out.println("Element not found");
-        // } else {
-        // System.out.println("Found element " + target + " at index: " + ans);
-        // }
     }
 }
