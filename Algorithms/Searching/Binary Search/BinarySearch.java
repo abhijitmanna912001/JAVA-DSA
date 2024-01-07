@@ -1,6 +1,7 @@
 // https://www.geeksforgeeks.org/problems/binary-search-1587115620/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
 // https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x2041/1
 // https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
+// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 // Solved these questions using below logic
 
 public class BinarySearch {
@@ -12,8 +13,11 @@ public class BinarySearch {
         // binarySearchDesc(arr2, 45);
         // orderAgnosticbinarySearch(arr2, 45);
         // orderAgnosticbinarySearch(arr, 87);
-        binarySearchFirstOccur(arr3, 4, true);
-        binarySearchFirstOccur(arr3, 4, false);
+        int res[] = new int[2];
+        int first = binarySearchFirstOccur(arr3, 4, true);
+        int last = binarySearchFirstOccur(arr3, 4, false);
+        res[0] = first;
+        res[1] = last;
     }
 
     static void binarySearch(int arr[], int target) {
@@ -77,7 +81,7 @@ public class BinarySearch {
         }
     }
 
-    static void binarySearchFirstOccur(int arr[], int target, boolean isFirst) {
+    static int binarySearchFirstOccur(int arr[], int target, boolean isFirst) {
         int ans = -1;
         int start = 0;
         int end = arr.length - 1;
@@ -96,10 +100,11 @@ public class BinarySearch {
                 end = mid - 1;
             }
         }
-        if (ans == -1) {
-            System.out.println("Element not found");
-        } else {
-            System.out.println("Found element " + target + " at index: " + ans);
-        }
+        return ans;
+        // if (ans == -1) {
+        // System.out.println("Element not found");
+        // } else {
+        // System.out.println("Found element " + target + " at index: " + ans);
+        // }
     }
 }
