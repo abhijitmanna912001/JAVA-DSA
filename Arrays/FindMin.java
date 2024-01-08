@@ -3,7 +3,7 @@
 
 public class FindMin {
     public static void main(String[] args) {
-        int arr[] = { 2, 2, 3, 4, 1, 7, 2, 9 };
+        int arr[] = { 2, 2, 3, 4, 0, 7, 2, 9};
         findMin(arr);
     }
 
