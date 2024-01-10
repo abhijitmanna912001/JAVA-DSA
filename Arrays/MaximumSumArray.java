@@ -2,9 +2,9 @@ public class MaximumSumArray {
     public static void main(String[] args) {
         int arr2d[][] = {
                 { 2, 4, 1, 5, 1 },
-                { 6, 7, 3, 4, 2 },
+                { -6, 7, 3, 4, 2 },
                 { 8, 1, 2, 2, 3 },
-                { 5, 5, 7, 8, 4 }
+                { -5, 5, 7, 8, 4 }
         };
         findMaximumSumArray(arr2d);
     }
