@@ -1,5 +1,6 @@
 // https://www.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1
-// Solved this question using below logic
+// https://leetcode.com/problems/peak-index-in-a-mountain-array/
+// Solved these questions using below logic
 
 public class PeakElementBitonic {
     public static void main(String[] args) {
@@ -30,5 +31,6 @@ public class PeakElementBitonic {
         }
 
         return -1;
+        // return 1 in leetcode question
     }
 }
