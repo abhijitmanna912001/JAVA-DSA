@@ -1,4 +1,5 @@
 // https://www.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
+// https://www.geeksforgeeks.org/problems/minimum-number-in-a-sorted-rotated-array-1587115620/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
 // https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 // Solved GFG and Leetcode questions using this logic
 
