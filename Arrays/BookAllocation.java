@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
-// Solved GFG hard book allocation problem
+// Solved GFG book allocation hard problem
 
 public class BookAllocation {
     public static void main(String[] args) {
