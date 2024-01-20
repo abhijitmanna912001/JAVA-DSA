@@ -12,7 +12,6 @@ public class SpiralMatrix {
     }
 
     public List<Integer> spiralOrder(int[][] matrix) {
-        int x,y = 0;
         List<Integer> result = new ArrayList<>();
         int n = matrix.length, m = matrix[0].length;
         int startRow = 0, endRow = n - 1;
