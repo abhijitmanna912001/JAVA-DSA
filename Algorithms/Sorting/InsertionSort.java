@@ -3,7 +3,7 @@
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int arr[] = { 9, 5, 1, 4, 6, 1 };
+        int arr[] = { -9, 5, 8, 4, 6, -1 };
         printArray(arr, "original array");
         insertSort(arr);
         printArray(arr, "sorted array");
