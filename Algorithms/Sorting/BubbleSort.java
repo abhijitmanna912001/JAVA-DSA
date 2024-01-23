@@ -24,10 +24,15 @@ public class BubbleSort {
         int n = arr.length;
         int passes = n - 2;
         for (int i = 0; i <= passes; i++) {
+            boolean flag = false;
             for (int j = 0; j <= passes - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
+                    flag = true;
                 }
+            }
+            if (!flag) {
+                break;
             }
         }
     }
