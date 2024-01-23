@@ -5,7 +5,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int arr[] = { 2, 7, 1, 5, 4, 6, 3, 0 };
         printArray(arr, "original array");
-        bubbleSort(arr);
+        brickSort(arr);
         printArray(arr, "sorted array");
     }
 
@@ -18,6 +18,32 @@ public class BubbleSort {
             }
         }
         System.out.println();
+    }
+
+    public static void brickSort(int arr[]) {
+        int n = arr.length;
+        boolean isSorted = false;
+        while (!isSorted) {
+            boolean flag = false;
+            for (int i = 0; i <= n - 2; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                    flag = true;
+                }
+            }
+
+            for (int i = 1; i <= n - 2; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                    flag = true;
+                }
+            }
+
+            if (!flag) {
+                isSorted = true;
+                break;
+            }
+        }
     }
 
     public static void bubbleSort(int arr[]) {
