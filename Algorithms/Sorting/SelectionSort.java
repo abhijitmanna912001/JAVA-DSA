@@ -5,8 +5,27 @@ public class SelectionSort {
     public static void main(String[] args) {
         int arr[] = { 2, 7, 1, 5, 0, 1, 12 };
         printArray(arr, "original array");
-        selectSort(arr);
+        biDirectionSelectSort(arr);
         printArray(arr, "sorted array");
+    }
+
+    public static void swap(int arr[], int ind1, int ind2) {
+        int temp = arr[ind1];
+        arr[ind1] = arr[ind2];
+        arr[ind2] = temp;
+    }
+
+    public static void printArray(int arr[], String message) {
+        System.out.println("Printing " + message);
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i != arr.length - 1) {
+                System.out.print(",");
+            }
+        }
+
+        System.out.println();
     }
 
     public static void selectSort(int arr[]) {
@@ -27,21 +46,33 @@ public class SelectionSort {
         }
     }
 
-    public static void swap(int arr[], int ind1, int ind2) {
-        int temp = arr[ind1];
-        arr[ind1] = arr[ind2];
-        arr[ind2] = temp;
-    }
+    public static void biDirectionSelectSort(int arr[]) {
+        int n = arr.length;
+        int k = n - 1;
 
-    public static void printArray(int arr[], String message) {
-        System.out.println("Printing " + message);
+        for (int i = 0; i < k; i++) {
+            int minEle = arr[i];
+            int minIndex = i;
+            int maxEle = arr[i];
+            int maxIndex = i;
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i != arr.length - 1) {
-                System.out.print(",");
+            for (int j = i + 1; j <= k; j++) {
+                if (arr[j] < minEle) {
+                    minEle = arr[j];
+                    minIndex = j;
+                } else if (arr[j] > maxEle) {
+                    maxEle = arr[j];
+                    maxIndex = j;
+                }
             }
+
+            swap(arr, i, minIndex);
+            if (maxEle == arr[minIndex]) {
+                swap(arr, k, minIndex);
+            } else {
+                swap(arr, k, maxIndex);
+            }
+            k--;
         }
-        System.out.println();
     }
 }
