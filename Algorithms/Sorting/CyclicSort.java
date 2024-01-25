@@ -1,9 +1,24 @@
 public class CyclicSort {
     public static void main(String[] args) {
-        int arr[] = { 2, 7, 1, 5, 4, 6, 3 };
+        int arr[] = { 2, 7, 1, 5, 4, 6, 3, 0 };
         printArray(arr, "original array");
-        cycleSort(arr);
+        cycleSort0toN(arr);
         printArray(arr, "sorted array");
+    }
+
+    public static void cycleSort0toN(int arr[]) {
+        int n = arr.length;
+        int index = 0;
+
+        while (index < n) {
+            int element = arr[index];
+            int actualPos = element;
+
+            if (arr[index] < n && arr[index] != arr[actualPos]) {
+                swap(arr, index, actualPos);
+            } else
+                index++;
+        }
     }
 
     public static void cycleSort(int arr[]) {
