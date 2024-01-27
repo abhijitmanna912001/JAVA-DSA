@@ -8,17 +8,16 @@ public class FindDuplicate {
     }
 
     public int findDuplicate(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            int element = Math.abs(nums[i]);
-            int actualIndex = element - i;
-
-            if (nums[actualIndex] < 0) {
+        int arr[] = nums;
+        for (int i = 0; i < arr.length; i++) {
+            int element = Math.abs(arr[i]);
+            int actualIndex = element - 1;
+            if (arr[actualIndex] < 0) {
                 return element;
             }
-
-            nums[actualIndex] = -1 * nums[actualIndex];
+            arr[actualIndex] = -1 * arr[actualIndex];
         }
 
-        return 0;
+        return -1;
     }
 }
