@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/find-the-duplicate-number/
-// Solved this using below logic
+// https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+// Solved these using below logic
 
 public class FindDuplicate {
     public static void main(String[] args) {
