@@ -40,11 +40,21 @@ public class Strings {
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
 
-        int name1[] = new int[3];
-        int name2[] = new int[3];
-        int name3[] = new int[3];
-        int name4[] = name1;
+        // int name1[] = new int[3];
+        // int name2[] = new int[3];
+        // int name3[] = new int[3];
+        // int name4[] = name1;
 
+        // System.out.println(name1 == name2);
+        // System.out.println(name2 == name3);
+        // System.out.println(name3 == name4);
+        // System.out.println(name4 == name2);
+        // System.out.println(name1 == name4);
+
+        String name1 = new String("Shashwat");
+        String name2 = new String("Shashwat");
+        String name3 = new String("Shashwat");
+        String name4 = name1;
         System.out.println(name1 == name2);
         System.out.println(name2 == name3);
         System.out.println(name3 == name4);
