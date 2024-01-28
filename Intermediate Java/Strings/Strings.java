@@ -77,9 +77,6 @@ public class Strings {
         // System.out.println("Line is " + line);
         // }
 
-        String str = "Abhijit Manna";
-        System.out.println(str.toLowerCase());
-        System.out.println(str);
-        System.out.println(str.toUpperCase());
+        
     }
 }
