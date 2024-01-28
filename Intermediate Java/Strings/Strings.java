@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Strings {
     public static void main(String[] args) {
         // String name = "Abhijit";
@@ -51,19 +53,28 @@ public class Strings {
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
 
-        String name1 = new String("Shashwat");
-        String name2 = new String("Shashwat");
-        String name3 = new String("Shashwat");
-        String name4 = name1;
-        System.out.println(name1.equals(name2));
-        System.out.println(name2.equals(name3));
-        System.out.println(name3.equals(name4));
-        System.out.println(name4.equals(name2));
-        System.out.println(name1.equals(name4));
+        // String name1 = new String("Shashwat");
+        // String name2 = new String("Shashwat");
+        // String name3 = new String("Shashwat");
+        // String name4 = name1;
+        // System.out.println(name1.equals(name2));
+        // System.out.println(name2.equals(name3));
+        // System.out.println(name3.equals(name4));
+        // System.out.println(name4.equals(name2));
+        // System.out.println(name1.equals(name4));
         // System.out.println(name1 == name2);
         // System.out.println(name2 == name3);
         // System.out.println(name3 == name4);
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
+
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter a line");
+        String line = obj.nextLine();
+        System.out.println("Enter a word");
+        String word = obj.next();
+        System.out.println("Word is " + word);
+        System.out.println("Line is " + line);
+
     }
 }
