@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// https://www.geeksforgeeks.org/problems/lower-case-to-upper-case3410/1?page=5&category=Strings,Java-Strings&difficulty=School,Basic,Easy&sortBy=submissions
 
 public class Strings {
     public static void main(String[] args) {
@@ -68,13 +68,18 @@ public class Strings {
         // System.out.println(name4 == name2);
         // System.out.println(name1 == name4);
 
-        Scanner obj = new Scanner(System.in);
-        System.out.println("Enter a line");
-        String line = obj.nextLine();
-        System.out.println("Enter a word");
-        String word = obj.next();
-        System.out.println("Word is " + word);
-        System.out.println("Line is " + line);
+        // try (Scanner obj = new Scanner(System.in)) {
+        // System.out.println("Enter a line");
+        // String line = obj.nextLine();
+        // System.out.println("Enter a word");
+        // String word = obj.next();
+        // System.out.println("Word is " + word);
+        // System.out.println("Line is " + line);
+        // }
 
+        String str = "Abhijit Manna";
+        System.out.println(str.toLowerCase());
+        System.out.println(str);
+        System.out.println(str.toUpperCase());
     }
 }
