@@ -61,6 +61,5 @@ public class StringFunctions {
         System.out.println(name3.equals(name4));
         System.out.println(name4.equals(name2));
         System.out.println(name1.equals(name4));
-
     }
 }
