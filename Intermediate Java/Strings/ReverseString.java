@@ -1,6 +1,6 @@
 public class ReverseString {
     public static void main(String[] args) {
-        reverseString2("ABCD");
+        reverseString3("ABCD");
     }
 
     public static void reverseString(String input) {
@@ -26,6 +26,22 @@ public class ReverseString {
         }
 
         System.out.println(ans.toString());
+    }
+
+    public static void reverseString3(String input) {
+        char chArray[] = input.toCharArray();
+        int n = chArray.length;
+
+        for (int i = 0; i < n / 2; i++) {
+            char firstChar = chArray[i];
+            char lastChar = chArray[n - 1 - i];
+            chArray[i] = lastChar;
+            chArray[n - 1 - i] = firstChar;
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(chArray[i]);
+        }
     }
 
 }
