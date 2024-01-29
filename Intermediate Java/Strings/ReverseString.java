@@ -1,3 +1,7 @@
+// https://www.geeksforgeeks.org/problems/java-reverse-a-string0416/1?page=4&category=Strings,Java-Strings&difficulty=School,Basic,Easy&sortBy=submissions
+// https://www.geeksforgeeks.org/problems/java-strings-set-15112/1?page=4&category=Strings,Java-Strings&difficulty=School,Basic,Easy&sortBy=submissions
+// Solved these questions using below logic
+
 public class ReverseString {
     public static void main(String[] args) {
         reverseString3("ABCD");
