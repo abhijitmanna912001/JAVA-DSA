@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class StringFormatting {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // System.out.println("Enter a word");
+        // // String word1 = sc.next();
+        // int word1 = sc.nextInt();
+        // System.out.println("Enter a word please");
+        // // String word2 = sc.next();
+        // int word2 = sc.nextInt();
+
+        // System.out.println("Enter a line");
+        // String line1 = sc.nextLine();
+        // System.out.println("Enter next line");
+        // String line2 = sc.nextLine();
+
+        // System.out.print("word1:" + word1 + ",");
+        // System.out.print("word2:" + word2 + ",");
+        // System.out.print("line1" + line1 + "*");
+        // System.out.print("line2" + line2 + "*");
+
+        System.out.println(64 + 87.99 + "shaswat");
+    }
+}
