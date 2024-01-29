@@ -1,6 +1,6 @@
 public class ReverseString {
     public static void main(String[] args) {
-        reverseString("ABCD");
+        reverseString2("ABCD");
     }
 
     public static void reverseString(String input) {
@@ -12,6 +12,20 @@ public class ReverseString {
         }
 
         System.out.println(ans);
+    }
+
+    public static void reverseString2(String input) {
+        StringBuilder ans = new StringBuilder(input);
+
+        int n = input.length();
+        for (int i = 0; i < n / 2; i++) {
+            char firstChar = ans.charAt(i);
+            char lastChar = ans.charAt(n - 1 - i);
+            ans.setCharAt(i, lastChar);
+            ans.setCharAt(n - 1 - i, firstChar);
+        }
+
+        System.out.println(ans.toString());
     }
 
 }
