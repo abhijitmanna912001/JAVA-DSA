@@ -34,6 +34,12 @@ public class StringFormatting {
         // rollNumber);
 
         double num = 67.86789765;
+        double newNum = num * 100;
         System.out.println(num);
+        String address = "India";
+        System.out.printf("Number is %.2f", num);
+        String name = String.format("Number is %f address is %s", address, num);
+        System.out.println(name);
+
     }
 }
