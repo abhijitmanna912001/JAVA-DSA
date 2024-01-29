@@ -21,6 +21,19 @@ public class StringFormatting {
         // System.out.print("line1" + line1 + "*");
         // System.out.print("line2" + line2 + "*");
 
-        System.out.println(64 + 87.99 + "shaswat");
+        // System.out.println("shashwat" + 64 + 87.99);
+
+        // System.out.println("shashwat" + (64 + 87.99));
+
+        // System.out.println(64 + 87.99 + "shashwat");
+
+        // String cal = 64 + 87.99 + "shashwat";
+        // String name = "shashwat";
+        // int rollNumber = 37;
+        // System.out.println("My name is " + name + " My roll number is " +
+        // rollNumber);
+
+        double num = 67.86789765;
+        System.out.println(num);
     }
 }
