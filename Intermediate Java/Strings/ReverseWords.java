@@ -8,24 +8,40 @@ public class ReverseWords {
     }
 
     public String reverseWords(String s) {
-        String arr[] = s.split(" ");
+        // String arr[] = s.split(" ");
         // String res = "";
         StringBuilder res = new StringBuilder();
 
-        for (int i = arr.length - 1; i >= 0; i--) {
-            if (arr[i].length() == 0) {
-                continue;
+        // for (int startIndex = s.length() - 1; startIndex >= 0; startIndex--) {
+        int startIndex = s.length() - 1;
+        
+
+        while (startIndex >= 0) {
+            while (startIndex >= 0 && s.charAt(startIndex) == ' ') {
+                startIndex--;
+            }
+
+            if (startIndex < 0) {
+                break;
+            }
+
+            int endIndex = startIndex;
+
+            while (startIndex >= 0 && s.charAt(startIndex) != ' ') {
+                startIndex--;
             }
 
             if (res.length() == 0) {
                 // res += arr[i];
-                res.append(arr[i]);
+                res.append(s.substring(startIndex + 1, endIndex + 1));
             } else {
                 res.append(" ");
-                res.append(arr[i]);
+                res.append(s.substring(startIndex + 1, endIndex + 1));
                 // res += " " + arr[i];
             }
         }
+
+        // }
 
         return res.toString();
     }
