@@ -8,43 +8,32 @@ public class QueueStack {
     Stack<Integer> stack2 = new Stack<>();
 
     public void enqueue(int val) {
+        while (!stack1.isEmpty()) {
+            stack2.push(stack1.pop());
+        }
+
         stack1.push(val);
+
+        while (!stack2.isEmpty()) {
+            stack1.push(stack2.pop());
+        }
+
     }
 
     public int dequeue() {
         if (stack1.isEmpty()) {
+            System.out.println("Queue is Empty");
             return -1;
         }
-
-        while (!stack1.isEmpty()) {
-            stack2.push(stack1.pop());
-        }
-
-        int val = stack2.pop();
-
-        while (!stack2.isEmpty()) {
-            stack1.push(stack2.pop());
-        }
-
-        return val;
+        return stack1.pop();
     }
 
     public int peek() {
         if (stack1.isEmpty()) {
+            System.out.println("Stack is Empty");
             return -1;
         }
-
-        while (!stack1.isEmpty()) {
-            stack2.push(stack1.pop());
-        }
-
-        int val = stack2.peek();
-
-        while (!stack2.isEmpty()) {
-            stack1.push(stack2.pop());
-        }
-
-        return val;
+        return stack1.peek();
     }
 
     public static void main(String[] args) {
