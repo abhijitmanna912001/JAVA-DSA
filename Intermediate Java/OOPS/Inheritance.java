@@ -122,12 +122,22 @@ class Child2 extends Child1 {
         System.out.println("Child2 name is " + c2name);
     }
 }
+
 class Child3 extends Child1 {
     String c3name;
     int c3age;
 
     public void displayChild2() {
         System.out.println("Child2 name is " + c3name);
+    }
+}
+
+// by default -- behaviour
+class M1 extends Object {
+    int age;
+
+    public void display() {
+
     }
 }
 
@@ -145,5 +155,7 @@ public class Inheritance {
         c2.pname = "World";
         c2.displayParent();
 
+        M1 m = new M1();
+        m.hashCode();
     }
 }
