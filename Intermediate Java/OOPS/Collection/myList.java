@@ -19,10 +19,17 @@ public class myList {
         // System.out.println(list.set(0, 9));
         // System.out.println(list);
 
-        Iterator<Integer> itr = list.iterator();
-        System.out.println("My list -->");
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
-        }
+        // Iterator<Integer> itr = list.iterator();
+        // System.out.println("My list -->");
+        // while (itr.hasNext()) {
+        // System.out.println(itr.next());
+        // }
+
+        list.sort(new Comparator<Integer>() {
+            public int compare(Integer A, Integer B) {
+                return A - B;
+            }
+        });
+        System.out.println(list);
     }
 }
