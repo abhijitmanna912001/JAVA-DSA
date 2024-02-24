@@ -1,5 +1,19 @@
 import java.util.*;
 
+class Student {
+    int rollNumber;
+    String name;
+
+    public Student(int rollNumber, String name) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+    }
+
+    public String toString() {
+        return name;
+    }
+}
+
 public class myList {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -30,6 +44,22 @@ public class myList {
                 return A - B;
             }
         });
-        System.out.println(list);
+
+        List<Student> list1 = new ArrayList<>();
+        list1.add(new Student(10, "Abhijit"));
+        list1.add(new Student(5, "Madhukar"));
+        list1.add(new Student(5, "Ritwika"));
+        list1.add(new Student(15, "Ishraaj"));
+
+        list1.sort(new Comparator<Student>() {
+            public int compare(Student A, Student B) {
+                int res = B.rollNumber - A.rollNumber;
+                if (res == 0) {
+                    return B.name.compareTo(A.name);
+                }
+                return res;
+            }
+        });
+        System.out.println(list1);
     }
 }
