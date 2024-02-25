@@ -21,6 +21,7 @@ public class myList {
         list.add(5);
         list.add(7);
         list.add(3);
+        list.add(2, 11);
         list.add(7);
         System.out.println(list);
         System.out.println(list.size());
