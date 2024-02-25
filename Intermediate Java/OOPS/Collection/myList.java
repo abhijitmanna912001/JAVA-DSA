@@ -33,11 +33,24 @@ public class myList {
         // System.out.println(list.set(0, 9));
         // System.out.println(list);
 
-        // Iterator<Integer> itr = list.iterator();
-        // System.out.println("My list -->");
-        // while (itr.hasNext()) {
-        // System.out.println(itr.next());
-        // }
+        Iterator<Integer> itr = list.iterator();
+        ListIterator<Integer> itr1 = list.listIterator();
+
+        System.out.println("My list -->");
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+        System.out.println("My list -->");
+
+        while (itr1.hasNext()) {
+            System.out.println(itr.next());
+
+            if (itr1.hasPrevious()) {
+                System.out.println(itr1.previous());
+                break;
+            }
+        }
 
         list.sort(new Comparator<Integer>() {
             public int compare(Integer A, Integer B) {
