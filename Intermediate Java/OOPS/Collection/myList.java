@@ -16,7 +16,8 @@ class Student {
 
 public class myList {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new LinkedList<>();
+
         list.add(1);
         list.add(5);
         list.add(7);
@@ -25,14 +26,14 @@ public class myList {
         list.add(7);
         System.out.println(list);
         System.out.println(list.size());
-        // list.remove(Integer.valueOf(5));
-        // System.out.println(list);
-        // list.remove(2);
-        // System.out.println(list);
-        // System.out.println(list.contains(7));
-        // System.out.println(list.get(0));
-        // System.out.println(list.set(0, 9));
-        // System.out.println(list);
+        list.remove(Integer.valueOf(5));
+        System.out.println(list);
+        list.remove(2);
+        System.out.println(list);
+        System.out.println(list.contains(7));
+        System.out.println(list.get(0));
+        System.out.println(list.set(0, 9));
+        System.out.println(list);
 
         Iterator<Integer> itr = list.iterator();
         ListIterator<Integer> itr1 = list.listIterator();
