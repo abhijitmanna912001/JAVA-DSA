@@ -2,7 +2,8 @@ import java.util.*;
 
 public class myQueue {
     public static void main(String[] args) {
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue = new ArrayDeque<>();
+        
         queue.offer(5);
         queue.offer(7);
         queue.offer(1);
